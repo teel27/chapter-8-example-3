@@ -17,4 +17,4 @@ set -u # or set -o nounset
 : "$CONTAINER_REGISTRY"
 : "$VERSION"
 
-envsubst < ./scripts/kubernetes/deploy.yaml | kubectl apply -f scripts/deploy.yaml
+envsubst < ./scripts/kubernetes/deploy.yaml | kubectl apply -f scripts/kubernetes/deploy.yaml
